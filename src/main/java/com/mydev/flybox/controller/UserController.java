@@ -1,10 +1,12 @@
 package com.mydev.flybox.controller;
 
+import com.mydev.flybox.model.Fly;
 import com.mydev.flybox.model.User;
 import com.mydev.flybox.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
 import java.util.List;
 
 @RestController
@@ -24,9 +26,9 @@ public class UserController {
         return userService.getUserByUsername(username);
     }
 
-    @PostMapping("users")
-    public User createUser(@RequestBody User user) {
-        return userService.createUser(user);
+    @PostMapping("fly")
+    public User createFly(@RequestBody Fly fly, Principal principal){
+        return userService.addFly(fly, principal.getName());
     }
 
 }

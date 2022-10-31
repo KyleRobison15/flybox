@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.config.EnableMongoAuditing;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -35,7 +34,7 @@ public class User {
 
     private Boolean active;
 
-    private String role;
+    private List<String> roles;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     @JsonFormat(pattern = "yyyy-MM-dd")
@@ -45,16 +44,4 @@ public class User {
 
     private List<Fly> flies;
 
-    public User(String username, String password, String firstName, String lastName, String email, Boolean active, String role, LocalDate createDate, Address address, List<Fly> flies) {
-        this.username = username;
-        this.password = password;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.active = active;
-        this.role = role;
-        this.createDate = createDate;
-        this.address = address;
-        this.flies = flies;
-    }
 }
