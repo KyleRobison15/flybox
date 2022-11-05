@@ -1,0 +1,79 @@
+{
+  "_id": {
+    "$oid": "6365948112542023391e2f3b"
+  },
+  "username": "KyleRobison15",
+  "password": "$2a$10$Z5XqOU6V5t3XsbUQL80YKezNsFxh.ZWf.MbK9GqtyS5MT8K7Bjagm",
+  "firstName": "Kyle",
+  "lastName": "Robison",
+  "email": "kylerobison15@gmail.com",
+  "active": true,
+  "roles": [
+    "user"
+  ],
+  "createDate": {
+    "$date": {
+      "$numberLong": "1667541600000"
+    }
+  },
+  "address": {
+    "address": "1217 N Nevada Ave",
+    "address2": null,
+    "city": "Colorado Springs",
+    "stateAbbreviation": "CO",
+    "postalCode": "80903"
+  },
+  "flies": [
+    {
+      "name": "Chubby Chernobyl",
+      "description": "High Vis Hopper",
+      "lifecycle": "Adult",
+      "sizeRange": "8-12",
+      "favoriteSize": "10",
+      "category": {
+        "name": "Terrestrial"
+      },
+      "recipe": {
+        "hook": {
+          "brandName": "Tiemco",
+          "number": "5263",
+          "description": "Nymph and Streamer, Down eye, 3X long shank, 2X heavy wire, perfect bend, bronze"
+        },
+        "thread": "UTC 140",
+        "materialsList": [
+          "2mm Fly Foam",
+          "White McFlylon",
+          "Krystal Flash (Pearl or Black)",
+          "UV Ice Dub (Yellow/Tan or Dark Olive",
+          "Sili Legs (Brown w/ Black Spec"
+        ]
+      }
+    },
+    {
+      "name": "Chubby Chernobyl",
+      "description": "High Vis Hopper",
+      "lifecycle": "Adult",
+      "sizeRange": "8-12",
+      "favoriteSize": "10",
+      "category": {
+        "name": "Terrestrial"
+      },
+      "recipe": {
+        "hook": {
+          "brandName": "Tiemco",
+          "number": "5263",
+          "description": "Nymph and Streamer, Down eye, 3X long shank, 2X heavy wire, perfect bend, bronze"
+        },
+        "thread": "UTC 140",
+        "materialsList": [
+          "2mm Fly Foam",
+          "White McFlylon",
+          "Krystal Flash (Pearl or Black)",
+          "UV Ice Dub (Yellow/Tan or Dark Olive",
+          "Sili Legs (Brown w/ Black Spec"
+        ]
+      }
+    }
+  ],
+  "_class": "com.mydev.flybox.model.User"
+}

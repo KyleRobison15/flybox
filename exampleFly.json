@@ -1,0 +1,25 @@
+{
+  "name": "Chubby Chernobyl",
+  "description": "High Vis Hopper",
+  "lifecycle": "Adult",
+  "sizeRange": "8-12",
+  "favoriteSize": "10",
+  "category": {
+    "name": "Terrestrial"
+  },
+  "recipe": {
+    "hook": {
+      "brandName": "Tiemco",
+      "number": "5263",
+      "description": "Nymph and Streamer, Down eye, 3X long shank, 2X heavy wire, perfect bend, bronze"
+    },
+    "thread": "UTC 140",
+    "materialsList": [
+      "2mm Fly Foam",
+      "White McFlylon",
+      "Krystal Flash (Pearl or Black)",
+      "UV Ice Dub (Yellow/Tan or Dark Olive",
+      "Sili Legs (Brown w/ Black Spec"
+    ]
+  }
+}

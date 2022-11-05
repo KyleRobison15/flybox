@@ -9,5 +9,6 @@ public interface UserService {
 
     List<User> getAllUsers ();
     User getUserByUsername(String username);
+    User getUserByEmail(String email);
     User addFly(Fly fly, String username);
 }

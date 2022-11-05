@@ -32,6 +32,9 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     }
 
     @Override
+    public User getUserByEmail(String email){ return userRepository.findByEmail(email); }
+
+    @Override
     public User addFly(Fly fly, String username) {
 
         User user = userRepository.findByUsername(username);
@@ -54,7 +57,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
         // If the user was not found, throw an exception with a message
         if(user == null){
-            throw new UsernameNotFoundException("This username does not exist");
+            throw new UsernameNotFoundException("This username: " + username + ". Does not exist");
         }
 
         // Next we must iterate over the list of roles for our user and create a new List<SimpleGrantedAuthorities>

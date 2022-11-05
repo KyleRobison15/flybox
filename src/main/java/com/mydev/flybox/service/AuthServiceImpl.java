@@ -1,5 +1,6 @@
 package com.mydev.flybox.service;
 
+import com.mydev.flybox.model.Address;
 import com.mydev.flybox.model.User;
 import com.mydev.flybox.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,7 @@ public class AuthServiceImpl implements AuthService{
         user.setActive(true);
         user.setRoles(roles);
         user.setFlies(new ArrayList<>()); // Add an empty array as the user's flies when they register
+        user.setAddress(new Address()); // Add null address when they register (they can update this later)
         user.setCreateDate(LocalDate.parse(LocalDate.now().format(formatter)));
         userRepo.save(user);
 
