@@ -1,12 +1,12 @@
 package com.mydev.flybox.model;
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
+
+import java.util.List;
 
 @Data
 public class Fly {
 
-    @Id
     private String name;
 
     private String description;
@@ -23,10 +23,12 @@ public class Fly {
 
     private Boolean tick;
 
-    private String tyingNotes;
+    private List<String> tyingNotes;
 
-    private String imageUrl;
+    private String stockImageUrl;
 
     private String videoUrl;
+
+    private Double retailPrice;
 
 }

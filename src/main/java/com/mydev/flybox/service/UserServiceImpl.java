@@ -1,6 +1,5 @@
 package com.mydev.flybox.service;
 
-import com.mydev.flybox.model.Fly;
 import com.mydev.flybox.model.User;
 import com.mydev.flybox.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,14 +33,6 @@ public class UserServiceImpl implements UserService, UserDetailsService {
     @Override
     public User getUserByEmail(String email){ return userRepository.findByEmail(email); }
 
-    @Override
-    public User addFly(Fly fly, String username) {
-
-        User user = userRepository.findByUsername(username);
-        user.getFlies().add(fly);
-
-        return userRepository.save(user);
-    }
 
     ////////////////////////////////////////////// SPRING SECURITY UserDetailsService Implementation //////////////////////////////////////////////////////
     // This method is overriding the loadUserByUsername method in the UserDetailsService interface

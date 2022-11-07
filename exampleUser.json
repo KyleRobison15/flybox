@@ -1,7 +1,5 @@
 {
-  "_id": {
-    "$oid": "6365948112542023391e2f3b"
-  },
+  "id": "6365948112542023391e2f3b",
   "username": "KyleRobison15",
   "password": "$2a$10$Z5XqOU6V5t3XsbUQL80YKezNsFxh.ZWf.MbK9GqtyS5MT8K7Bjagm",
   "firstName": "Kyle",
@@ -11,17 +9,13 @@
   "roles": [
     "user"
   ],
-  "createDate": {
-    "$date": {
-      "$numberLong": "1667541600000"
-    }
-  },
+  "createDate": "2022-11-04",
   "address": {
-    "address": "1217 N Nevada Ave",
+    "address": null,
     "address2": null,
-    "city": "Colorado Springs",
-    "stateAbbreviation": "CO",
-    "postalCode": "80903"
+    "city": null,
+    "stateAbbreviation": null,
+    "postalCode": null
   },
   "flies": [
     {
@@ -47,33 +41,52 @@
           "UV Ice Dub (Yellow/Tan or Dark Olive",
           "Sili Legs (Brown w/ Black Spec"
         ]
-      }
+      },
+      "tick": true,
+      "tyingNotes": [
+        "Add head cement",
+        "Dub Heavily",
+        "Create wide channel for legs and wings"
+      ],
+      "stockImageUrl": "https://images.unsplash.com/photo-1590003789453-9bec53d5d499?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+      "videoUrl": "https://youtu.be/_7lCOuz1sIQ",
+      "retailPrice": 2.84
     },
     {
-      "name": "Chubby Chernobyl",
-      "description": "High Vis Hopper",
+      "name": "Stimulator",
+      "description": "Great attractor fly. Immitates stonefly, caddis, and terrestrials.",
       "lifecycle": "Adult",
-      "sizeRange": "8-12",
-      "favoriteSize": "10",
+      "sizeRange": "10-14",
+      "favoriteSize": "12",
       "category": {
-        "name": "Terrestrial"
+        "name": "Attractor"
       },
       "recipe": {
         "hook": {
           "brandName": "Tiemco",
-          "number": "5263",
-          "description": "Nymph and Streamer, Down eye, 3X long shank, 2X heavy wire, perfect bend, bronze"
+          "number": "200R",
+          "description": "A straight-eye nymph and dry-fly hook that incorporates a gradually sloped bend to better imitate certain insects."
         },
-        "thread": "UTC 140",
+        "thread": "Uni 6/0",
         "materialsList": [
-          "2mm Fly Foam",
-          "White McFlylon",
-          "Krystal Flash (Pearl or Black)",
-          "UV Ice Dub (Yellow/Tan or Dark Olive",
-          "Sili Legs (Brown w/ Black Spec"
+          "Deer Hair",
+          "XS or S Gold Ultra Wire",
+          "Orange Superfine or Antron Dubbing",
+          "Brown Pro Grade Dry Fly Hackle (1 or 2 sizes smaller than the hook size)",
+          "Grizzly Pro Grade Dry Fly Hackle (1 or 2 sizes smaller than the hook size)",
+          "Yellow Superfine Dubbing"
         ]
-      }
+      },
+      "tick": false,
+      "tyingNotes": [
+        "Body should be dubbed fairly sparse.",
+        "Leave more room than you think for the head of the fly ",
+        "Mark where to end the body dubbing about 3 or 4 eye lengths from the eye",
+        "When tying on the deer hair wing, hold firmly onto the deer hair until it has been tightened down to prevent spinning"
+      ],
+      "stockImageUrl": "https://images.unsplash.com/photo-1590003789453-9bec53d5d499?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+      "videoUrl": "https://youtu.be/HPo9cadEQVY",
+      "retailPrice": 2.5
     }
-  ],
-  "_class": "com.mydev.flybox.model.User"
+  ]
 }
